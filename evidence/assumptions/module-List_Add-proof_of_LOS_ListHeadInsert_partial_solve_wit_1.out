@@ -1,0 +1,2 @@
+Axioms:
+CNotation.eval_addr_expr : CNotation.rvalue_expr -> CNotation.addr

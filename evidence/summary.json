@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "qcp_rerun": true,
+  "qcp_commit": "af71be03bdbfad353542c38013b1e69d124cb56c",
+  "openharmony_commit": "4ac7f3aed67000b47bc14d6fe79d63ada708d780",
+  "coq_version": "8.20.1",
+  "ocaml_version": "4.14.2",
+  "vc_count": 16,
+  "reused_proofs": 7,
+  "new_proofs": 9,
+  "admitted": 0,
+  "fresh_compiled_modules": 133,
+  "shared_strategies": 35,
+  "assumption_queries": 172,
+  "module_members": 121,
+  "assumptions": [
+    "Coq.Logic.FunctionalExtensionality.functional_extensionality_dep",
+    "Coq.Logic.PropExtensionality.propositional_extensionality",
+    "SimpleC.SL.CNotation.eval_addr_expr"
+  ],
+  "functions": {
+    "LOS_ListInit": {
+      "vc_count": 1,
+      "new_proofs": 0
+    },
+    "LOS_ListAdd": {
+      "vc_count": 2,
+      "new_proofs": 0
+    },
+    "LOS_ListTailInsert": {
+      "vc_count": 4,
+      "new_proofs": 2
+    },
+    "LOS_ListHeadInsert": {
+      "vc_count": 2,
+      "new_proofs": 2
+    },
+    "LOS_ListDelete": {
+      "vc_count": 7,
+      "new_proofs": 5
+    }
+  },
+  "build_seconds": 62.619,
+  "note": "固定规约和逻辑模型下的证明；auto 文件中的九项证明为新增 Coq 证明。"
+}

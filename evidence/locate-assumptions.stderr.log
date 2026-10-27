@@ -1,0 +1,18 @@
+File "./AuditLocations.v", line 5, characters 0-60:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]
+File "./AuditLocations.v", line 5, characters 0-60:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]
+File "./AuditLocations.v", line 6, characters 0-90:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]
+File "./AuditLocations.v", line 6, characters 0-90:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]
+File "./AuditLocations.v", line 7, characters 0-83:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]
+File "./AuditLocations.v", line 7, characters 0-83:
+Warning: Output directory is unset, using "/tmp/qcp-delivery-validated/SeparationLogic". Use command line option
+"-output-directory to set a default directory. [default-output-directory,filesystem,default]

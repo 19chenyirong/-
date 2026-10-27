@@ -1,0 +1,2 @@
+# Keep locked source hashes stable, including upstream CRLF line endings.
+* -text

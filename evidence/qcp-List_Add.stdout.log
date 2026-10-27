@@ -1,0 +1,11 @@
+Start to symbolic execution on program : QCP_examples/LiteOS/List_Add.c
+Start to parse strategies file common
+File Path: /tmp/qcp-delivery-validated/QCP_examples/common.strategies
+Finish parsing strategies file common
+Start to parse strategies file los_sortlink
+File Path: /tmp/qcp-delivery-validated/QCP_examples/los_sortlink.strategies
+Finish parsing strategies file los_sortlink
+Symbolic Execution into function LOS_ListAdd
+Symbolic Execution into function LOS_ListTailInsert
+Symbolic Execution into function LOS_ListHeadInsert
+Successfully finished symbolic execution

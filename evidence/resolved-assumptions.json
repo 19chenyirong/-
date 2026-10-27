@@ -1,0 +1,5 @@
+{
+  "CNotation.eval_addr_expr": "SimpleC.SL.CNotation.eval_addr_expr",
+  "FunctionalExtensionality.functional_extensionality_dep": "Coq.Logic.FunctionalExtensionality.functional_extensionality_dep",
+  "PropExtensionality.propositional_extensionality": "Coq.Logic.PropExtensionality.propositional_extensionality"
+}

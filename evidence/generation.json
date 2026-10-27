@@ -1,0 +1,32 @@
+{
+  "LOS_ListInit": {
+    "goal": {
+      "generated_lf_sha256": "d44637428699c843cd1c2c47bf0894f9cd4324418683eb9b6e2166455e587c7d",
+      "fixed_lf_sha256": "d44637428699c843cd1c2c47bf0894f9cd4324418683eb9b6e2166455e587c7d"
+    },
+    "goal_check": {
+      "generated_lf_sha256": "2f909f4cfa2d19410a2a4baa9f87adbf575ccdc54b9bf5e805252dac91c1c286",
+      "fixed_lf_sha256": "2f909f4cfa2d19410a2a4baa9f87adbf575ccdc54b9bf5e805252dac91c1c286"
+    }
+  },
+  "List_Add": {
+    "goal": {
+      "generated_lf_sha256": "8c210ac6fca9bfb9c7503dc4bb2110a2b75c64e3b65cc2670694aa170a5e212e",
+      "fixed_lf_sha256": "8c210ac6fca9bfb9c7503dc4bb2110a2b75c64e3b65cc2670694aa170a5e212e"
+    },
+    "goal_check": {
+      "generated_lf_sha256": "1cad33620205be754bcf7ccdd6207749b8cf5b5e66d2460a744be2a21e7aeac2",
+      "fixed_lf_sha256": "1cad33620205be754bcf7ccdd6207749b8cf5b5e66d2460a744be2a21e7aeac2"
+    }
+  },
+  "LOS_ListDelete": {
+    "goal": {
+      "generated_lf_sha256": "c1c86ea0390ef3d72c694842d809d9bc1f4a31355a89adb5e0d354a25c012da9",
+      "fixed_lf_sha256": "c1c86ea0390ef3d72c694842d809d9bc1f4a31355a89adb5e0d354a25c012da9"
+    },
+    "goal_check": {
+      "generated_lf_sha256": "c5158395287cfc0d4fbfe4473bcd4d1be66e993984733dcbae6f3bf98298a35f",
+      "fixed_lf_sha256": "c5158395287cfc0d4fbfe4473bcd4d1be66e993984733dcbae6f3bf98298a35f"
+    }
+  }
+}

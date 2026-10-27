@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/user/logic_project/work/qcp-v1.0/linux-binary/symexec",
+    "--goal-file=SeparationLogic/examples/LiteOS/List_Add_goal.v",
+    "--proof-auto-file=SeparationLogic/examples/LiteOS/List_Add_proof_auto.v",
+    "--proof-manual-file=SeparationLogic/examples/LiteOS/List_Add_proof_manual.v",
+    "-slp",
+    "QCP_examples/",
+    "SimpleC.EE",
+    "-IQCP_examples/",
+    "--no-logic-path",
+    "--input-file=QCP_examples/LiteOS/List_Add.c",
+    "--no-exec-info"
+  ],
+  "shell_command": "/home/user/logic_project/work/qcp-v1.0/linux-binary/symexec --goal-file=SeparationLogic/examples/LiteOS/List_Add_goal.v --proof-auto-file=SeparationLogic/examples/LiteOS/List_Add_proof_auto.v --proof-manual-file=SeparationLogic/examples/LiteOS/List_Add_proof_manual.v -slp QCP_examples/ SimpleC.EE -IQCP_examples/ --no-logic-path --input-file=QCP_examples/LiteOS/List_Add.c --no-exec-info",
+  "cwd": "/tmp/qcp-delivery-validated",
+  "started": "2026-10-26T14:44:31.979466+08:00",
+  "ended": "2026-10-26T14:44:31.986185+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.007
+}

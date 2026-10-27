@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/user/logic_project/.opam-qcp/_opam/bin/coqc",
+    "--version"
+  ],
+  "shell_command": "/home/user/logic_project/.opam-qcp/_opam/bin/coqc --version",
+  "cwd": "/tmp/qcp-delivery-validated",
+  "started": "2026-10-26T14:44:31.918127+08:00",
+  "ended": "2026-10-26T14:44:31.948085+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.03
+}

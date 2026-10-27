@@ -1,0 +1,15 @@
+{
+  "command": [
+    "make",
+    "SHELL=/bin/bash",
+    ".SHELLFLAGS=-ec",
+    "-j2",
+    "audit"
+  ],
+  "shell_command": "make SHELL=/bin/bash .SHELLFLAGS=-ec -j2 audit",
+  "cwd": "/tmp/qcp-delivery-validated/SeparationLogic",
+  "started": "2026-10-26T14:44:32.038118+08:00",
+  "ended": "2026-10-26T14:45:34.657577+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 62.619
+}

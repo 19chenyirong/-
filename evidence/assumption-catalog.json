@@ -1,0 +1,20 @@
+{
+  "Coq.Logic.FunctionalExtensionality.functional_extensionality_dep": {
+    "category": "标准库外延性公理",
+    "source": "stdlib-sources/FunctionalExtensionality.v",
+    "sha256": "467c705baef76025cba36c3080364a35ff4c6ef018ea5258c5d8ed2cbb8e0bca",
+    "line": 25
+  },
+  "Coq.Logic.PropExtensionality.propositional_extensionality": {
+    "category": "标准库外延性公理",
+    "source": "stdlib-sources/PropExtensionality.v",
+    "sha256": "f3aa59ee56980edce8edb184555be7cab0fa056c024077717aa173a34a309e60",
+    "line": 13
+  },
+  "SimpleC.SL.CNotation.eval_addr_expr": {
+    "category": "既有地址模型参数",
+    "source": "src/SeparationLogic/SeparationLogic/CNotation.v",
+    "sha256": "20949cd67b0fee90e9c2a3db1cdc421280a7f22b9582a5107330959b458462f2",
+    "line": 43
+  }
+}

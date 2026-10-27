@@ -1,0 +1,7 @@
+.DEFAULT_GOAL := audit
+include dependencies.mk
+audit: examples/LiteOS/LOS_ListInit_goal_check.vo examples/LiteOS/List_Add_goal_check.vo examples/LiteOS/LOS_ListDelete_goal_check.vo
+.PHONY: audit
+%.vo: %.v
+	@echo COQC $<
+	@/home/user/logic_project/.opam-qcp/_opam/bin/coqc -R SeparationLogic SimpleC.SL -R unifysl Logic -R sets SetsClass -R compcert_lib compcert.lib -R auxlibs AUXLib -R examples SimpleC.EE -R StrategyLib SimpleC.StrategyLib -R Common SimpleC.Common -R fixedpoints FP -R MonadLib MonadLib "$<"

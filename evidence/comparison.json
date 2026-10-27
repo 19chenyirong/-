@@ -1,0 +1,1010 @@
+{
+  "structures": [
+    {
+      "source": "src/QCP_examples/LiteOS/LOS_ListInit.c",
+      "qcp": {
+        "start_line": 100,
+        "end_line": 103,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      },
+      "openharmony": {
+        "start_line": 52,
+        "end_line": 55,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      }
+    },
+    {
+      "source": "src/QCP_examples/LiteOS/List_Add.c",
+      "qcp": {
+        "start_line": 100,
+        "end_line": 103,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      },
+      "openharmony": {
+        "start_line": 52,
+        "end_line": 55,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      }
+    },
+    {
+      "source": "src/QCP_examples/LiteOS/LOS_ListDelete.c",
+      "qcp": {
+        "start_line": 102,
+        "end_line": 105,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      },
+      "openharmony": {
+        "start_line": 52,
+        "end_line": 55,
+        "fields": [
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstPrev"
+          ],
+          [
+            "struct",
+            "LOS_DL_LIST",
+            "*",
+            "pstNext"
+          ]
+        ]
+      }
+    }
+  ],
+  "functions": [
+    {
+      "function": "LOS_ListInit",
+      "source": "src/QCP_examples/LiteOS/LOS_ListInit.c",
+      "qcp": {
+        "signature": "static inline void LOS_ListInit(LOS_DL_LIST *list)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list"
+        ],
+        "start_line": 115,
+        "end_line": 124,
+        "statements": [
+          {
+            "line": 122,
+            "text": "list->pstNext = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          {
+            "line": 123,
+            "text": "list->pstPrev = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          }
+        ]
+      },
+      "openharmony": {
+        "signature": "LITE_OS_SEC_ALW_INLINE STATIC INLINE VOID LOS_ListInit(LOS_DL_LIST *list)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list"
+        ],
+        "start_line": 74,
+        "end_line": 78,
+        "statements": [
+          {
+            "line": 76,
+            "text": "list->pstNext = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          {
+            "line": 77,
+            "text": "list->pstPrev = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          }
+        ]
+      },
+      "statements": [
+        {
+          "qcp": {
+            "line": 122,
+            "text": "list->pstNext = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 76,
+            "text": "list->pstNext = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 123,
+            "text": "list->pstPrev = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 77,
+            "text": "list->pstPrev = list;",
+            "tokens": [
+              "list",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        }
+      ],
+      "parameters_equal": true
+    },
+    {
+      "function": "LOS_ListAdd",
+      "source": "src/QCP_examples/LiteOS/List_Add.c",
+      "qcp": {
+        "signature": "static inline void LOS_ListAdd(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 126,
+        "end_line": 144,
+        "statements": [
+          {
+            "line": 140,
+            "text": "node->pstNext = list->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          {
+            "line": 141,
+            "text": "node->pstPrev = list;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          {
+            "line": 142,
+            "text": "list->pstNext->pstPrev = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          {
+            "line": 143,
+            "text": "list->pstNext = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              ";"
+            ]
+          }
+        ]
+      },
+      "openharmony": {
+        "signature": "LITE_OS_SEC_ALW_INLINE STATIC INLINE VOID LOS_ListAdd(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 188,
+        "end_line": 194,
+        "statements": [
+          {
+            "line": 190,
+            "text": "node->pstNext = list->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          {
+            "line": 191,
+            "text": "node->pstPrev = list;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          {
+            "line": 192,
+            "text": "list->pstNext->pstPrev = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          {
+            "line": 193,
+            "text": "list->pstNext = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              ";"
+            ]
+          }
+        ]
+      },
+      "statements": [
+        {
+          "qcp": {
+            "line": 140,
+            "text": "node->pstNext = list->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 190,
+            "text": "node->pstNext = list->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "list",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 141,
+            "text": "node->pstPrev = list;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 191,
+            "text": "node->pstPrev = list;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "list",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 142,
+            "text": "list->pstNext->pstPrev = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 192,
+            "text": "list->pstNext->pstPrev = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 143,
+            "text": "list->pstNext = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 193,
+            "text": "list->pstNext = node;",
+            "tokens": [
+              "list",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        }
+      ],
+      "parameters_equal": true
+    },
+    {
+      "function": "LOS_ListTailInsert",
+      "source": "src/QCP_examples/LiteOS/List_Add.c",
+      "qcp": {
+        "signature": "static inline void LOS_ListTailInsert(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 145,
+        "end_line": 163,
+        "statements": [
+          {
+            "line": 162,
+            "text": "LOS_ListAdd(list->pstPrev, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              "->",
+              "pstPrev",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          }
+        ]
+      },
+      "openharmony": {
+        "signature": "LITE_OS_SEC_ALW_INLINE STATIC INLINE VOID LOS_ListTailInsert(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 215,
+        "end_line": 218,
+        "statements": [
+          {
+            "line": 217,
+            "text": "LOS_ListAdd(list->pstPrev, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              "->",
+              "pstPrev",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          }
+        ]
+      },
+      "statements": [
+        {
+          "qcp": {
+            "line": 162,
+            "text": "LOS_ListAdd(list->pstPrev, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              "->",
+              "pstPrev",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 217,
+            "text": "LOS_ListAdd(list->pstPrev, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              "->",
+              "pstPrev",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        }
+      ],
+      "parameters_equal": true
+    },
+    {
+      "function": "LOS_ListHeadInsert",
+      "source": "src/QCP_examples/LiteOS/List_Add.c",
+      "qcp": {
+        "signature": "static inline void LOS_ListHeadInsert(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 164,
+        "end_line": 175,
+        "statements": [
+          {
+            "line": 174,
+            "text": "LOS_ListAdd(list, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          }
+        ]
+      },
+      "openharmony": {
+        "signature": "LITE_OS_SEC_ALW_INLINE STATIC INLINE VOID LOS_ListHeadInsert(LOS_DL_LIST *list, LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "list",
+          ",",
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 239,
+        "end_line": 242,
+        "statements": [
+          {
+            "line": 241,
+            "text": "LOS_ListAdd(list, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          }
+        ]
+      },
+      "statements": [
+        {
+          "qcp": {
+            "line": 174,
+            "text": "LOS_ListAdd(list, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 241,
+            "text": "LOS_ListAdd(list, node);",
+            "tokens": [
+              "LOS_ListAdd",
+              "(",
+              "list",
+              ",",
+              "node",
+              ")",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        }
+      ],
+      "parameters_equal": true
+    },
+    {
+      "function": "LOS_ListDelete",
+      "source": "src/QCP_examples/LiteOS/LOS_ListDelete.c",
+      "qcp": {
+        "signature": "static inline void LOS_ListDelete(LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 127,
+        "end_line": 144,
+        "statements": [
+          {
+            "line": 140,
+            "text": "node->pstNext->pstPrev = node->pstPrev;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              "->",
+              "pstPrev",
+              ";"
+            ]
+          },
+          {
+            "line": 141,
+            "text": "node->pstPrev->pstNext = node->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          {
+            "line": 142,
+            "text": "node->pstNext = (LOS_DL_LIST *)0;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "(",
+              "LOS_DL_LIST",
+              "*",
+              ")",
+              "0",
+              ";"
+            ]
+          },
+          {
+            "line": 143,
+            "text": "node->pstPrev = (LOS_DL_LIST *)0;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "(",
+              "LOS_DL_LIST",
+              "*",
+              ")",
+              "0",
+              ";"
+            ]
+          }
+        ]
+      },
+      "openharmony": {
+        "signature": "LITE_OS_SEC_ALW_INLINE STATIC INLINE VOID LOS_ListDelete(LOS_DL_LIST *node)",
+        "parameters": [
+          "LOS_DL_LIST",
+          "*",
+          "node"
+        ],
+        "start_line": 263,
+        "end_line": 269,
+        "statements": [
+          {
+            "line": 265,
+            "text": "node->pstNext->pstPrev = node->pstPrev;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              "->",
+              "pstPrev",
+              ";"
+            ]
+          },
+          {
+            "line": 266,
+            "text": "node->pstPrev->pstNext = node->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          {
+            "line": 267,
+            "text": "node->pstNext = NULL;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "NULL",
+              ";"
+            ]
+          },
+          {
+            "line": 268,
+            "text": "node->pstPrev = NULL;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "NULL",
+              ";"
+            ]
+          }
+        ]
+      },
+      "statements": [
+        {
+          "qcp": {
+            "line": 140,
+            "text": "node->pstNext->pstPrev = node->pstPrev;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              "->",
+              "pstPrev",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 265,
+            "text": "node->pstNext->pstPrev = node->pstPrev;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "->",
+              "pstPrev",
+              "=",
+              "node",
+              "->",
+              "pstPrev",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 141,
+            "text": "node->pstPrev->pstNext = node->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 266,
+            "text": "node->pstPrev->pstNext = node->pstNext;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "->",
+              "pstNext",
+              "=",
+              "node",
+              "->",
+              "pstNext",
+              ";"
+            ]
+          },
+          "raw_equal": true,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 142,
+            "text": "node->pstNext = (LOS_DL_LIST *)0;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "(",
+              "LOS_DL_LIST",
+              "*",
+              ")",
+              "0",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 267,
+            "text": "node->pstNext = NULL;",
+            "tokens": [
+              "node",
+              "->",
+              "pstNext",
+              "=",
+              "NULL",
+              ";"
+            ]
+          },
+          "raw_equal": false,
+          "null_normalized_equal": true
+        },
+        {
+          "qcp": {
+            "line": 143,
+            "text": "node->pstPrev = (LOS_DL_LIST *)0;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "(",
+              "LOS_DL_LIST",
+              "*",
+              ")",
+              "0",
+              ";"
+            ]
+          },
+          "openharmony": {
+            "line": 268,
+            "text": "node->pstPrev = NULL;",
+            "tokens": [
+              "node",
+              "->",
+              "pstPrev",
+              "=",
+              "NULL",
+              ";"
+            ]
+          },
+          "raw_equal": false,
+          "null_normalized_equal": true
+        }
+      ],
+      "parameters_equal": true
+    }
+  ],
+  "statement_count": 12,
+  "raw_equal_count": 10,
+  "null_spelling_difference_count": 2,
+  "scope": "固定源码的结构、参数和顺序语句对照；不表示全部编译配置下的形式化等价。"
+}

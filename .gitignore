@@ -1,0 +1,9 @@
+.tools/
+runs/
+__pycache__/
+*.pyc
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
